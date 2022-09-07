@@ -28,14 +28,14 @@ public class EquationsValidation {
         Queue<Character> queue = new PriorityQueue<>();
         Set<Character> visited = new HashSet<>();
 
-        for (int i = 0; i < equations.length; i++) {
+        for (char[] equation : equations) {
             // to know which char is greater and which is smaller
-            if (equations[i][1] == '<') {
-                smaller = equations[i][0];
-                greater = equations[i][2];
+            if (equation[1] == '<') {
+                smaller = equation[0];
+                greater = equation[2];
             } else {
-                smaller = equations[i][2];
-                greater = equations[i][0];
+                smaller = equation[2];
+                greater = equation[0];
             }
 
             // validate with previous equations
@@ -47,7 +47,7 @@ public class EquationsValidation {
                     if (visited.contains(current)) continue;
                     visited.add(current);
                     if (current == smaller) {
-                        System.out.println("Wrong equation: " + Arrays.toString(equations[i]));
+                        System.out.println("Wrong equation: " + Arrays.toString(equation));
                         return false;
                     }
                     if (store.get(current) != null) {
