@@ -1,6 +1,5 @@
 package com.example.problemsolving.problems.hackerrank;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class NonDivisibleSubset {

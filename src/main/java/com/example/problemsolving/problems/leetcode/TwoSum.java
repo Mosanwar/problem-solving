@@ -1,6 +1,8 @@
 package com.example.problemsolving.problems.leetcode;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TwoSum {
 

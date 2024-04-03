@@ -1,4 +1,4 @@
-package com.example.problemsolving.problems.interview;
+package com.example.problemsolving.problems.ascendion;
 
 import java.util.Arrays;
 

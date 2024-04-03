@@ -1,8 +1,9 @@
 package com.example.problemsolving.problems.hackerrank;
 
-import java.util.*;
-import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.SynchronousQueue;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Contacts {
     public static void main(String[] args) {

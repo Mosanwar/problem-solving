@@ -1,7 +1,5 @@
 package com.example.problemsolving.problems.hackerrank;
 
-import java.util.Arrays;
-
 public class BiggerIsGreater {
     public static void main(String[] args) {
         System.out.println(biggerIsGreater("bb"));

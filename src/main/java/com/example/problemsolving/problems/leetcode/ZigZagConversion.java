@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class ZigZagConversion {
     public static void main(String[] args) {
-        System.out.println(convert("PAYPALISHIRING", 3));
+        System.out.println(convert2("AB", 2));
     }
 
     public static String convert(String s, int numRows) {
@@ -30,5 +30,25 @@ public class ZigZagConversion {
         }
 
         return Arrays.stream(arr).collect(Collectors.joining());
+    }
+
+    public static String convert2(String s, int numRows) {
+        if (numRows == 1) return s;
+        String[] rows = new String[numRows];
+        Arrays.fill(rows, "");
+
+        int sIdx = 0;
+        int rIdx = 0;
+        boolean down = true;
+
+        while (sIdx < s.length()) {
+            rows[rIdx] += s.charAt(sIdx);
+            if (rIdx >= rows.length-1) down = false;
+            else if (rIdx <= 0) down = true;
+            if (down) rIdx++; else rIdx--;
+            sIdx++;
+        }
+
+        return String.join("", rows);
     }
 }

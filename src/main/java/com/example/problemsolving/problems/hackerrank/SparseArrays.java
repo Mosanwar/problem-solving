@@ -1,7 +1,9 @@
 package com.example.problemsolving.problems.hackerrank;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class SparseArrays {
     public static void main(String[] args) {

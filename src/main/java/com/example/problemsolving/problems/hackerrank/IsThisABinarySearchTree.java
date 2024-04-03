@@ -1,7 +1,5 @@
 package com.example.problemsolving.problems.hackerrank;
 
-import java.util.Scanner;
-
 public class IsThisABinarySearchTree {
     public static void main(String[] args) {
 //        Node node1 = new Node(1);

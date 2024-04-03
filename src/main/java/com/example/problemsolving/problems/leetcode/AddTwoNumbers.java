@@ -1,8 +1,6 @@
 package com.example.problemsolving.problems.leetcode;
 
-import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.Stack;
 import java.util.concurrent.LinkedBlockingDeque;
 
 public class AddTwoNumbers {
@@ -19,7 +17,6 @@ public class AddTwoNumbers {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         Queue<Integer> s1 = new LinkedBlockingDeque<>();
         Queue<Integer> s2 = new LinkedBlockingDeque<>();
-        int loopCounter = 0;
 
         while (l1 != null || l2 != null) {
             if (l1 != null) {
@@ -32,7 +29,6 @@ public class AddTwoNumbers {
                 l2 = l2.next;
             }
 
-            loopCounter++;
         }
 
         Queue<Integer> sum = new LinkedBlockingDeque<>();
